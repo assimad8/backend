@@ -10,5 +10,5 @@ class UserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields = ["id","username","email","password","first_name","last_name"]
+        fields = ["id","username","email","password","first_name","last_name","created","updated"]
         red_only_field = ["is_active", "is_staff", "is_superuser"]
